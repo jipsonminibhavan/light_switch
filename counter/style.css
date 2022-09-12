@@ -1,21 +1,15 @@
 body {
-    margin: 2rem;
-
+  margin: 2rem;
 }
 
-
 .counter {
-
-    font-size: 4rem;
+  font-size: 4rem;
 }
 
 main {
-    background-color: grey;
-    height: 100vh;
+  background-color: grey;
+  height: 100vh;
 
-    background-image: linear-gradient(hotpink, hotpink);
-    background-image-size: 0%;
-    background-repeat: no-repeat;
-
+  background-image: linear-gradient(hotpink, hotpink);
+  background-repeat: no-repeat;
 }
-
