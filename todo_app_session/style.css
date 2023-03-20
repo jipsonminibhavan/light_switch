@@ -1,0 +1,160 @@
+*,
+**,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 15px;
+}
+
+* {
+  font-family: "Spartan", sans-serif;
+}
+
+body {
+  --box-highlight-color: #ffffff;
+  --background-color: #f5f5f5;
+  --text-color: black;
+  --header-color: #ef476f;
+  --button-highlight-color: #118ab2;
+  --border-color: #073b4c;
+  --focus-color: #f5ab00;
+  --checkbox-color: #06d6a0;
+}
+
+body {
+  margin: 0;
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+_body * {
+  outline: 0.15rem solid firebrick;
+}
+
+main {
+  padding: 2rem;
+}
+
+fieldset {
+  padding: 0;
+  border: none;
+}
+
+/* specific styling */
+
+header {
+  background-color: var(--header-color);
+  padding: 2rem 0rem 1.5rem 2rem;
+  color: var(--box-highlight-color);
+  font-weight: bold;
+}
+
+header > * + * {
+  padding-top: 0.7rem;
+}
+
+header h1 {
+  text-shadow: 0.1rem 0.1rem var(--button-highlight-color),
+    0.2rem 0.2rem var(--focus-color);
+}
+
+main > * + * {
+  padding-top: 1rem;
+}
+
+.todo-list {
+  padding-top: 3.5rem;
+}
+
+/* button styling */
+
+button {
+  color: var(--box-highlight-color);
+  background-color: var(--button-highlight-color);
+  box-shadow: 0.2rem 0.2rem var(--header-color);
+  border-radius: 0.4rem;
+}
+
+button,
+input[type="text"] {
+  padding: 0.5rem 1rem;
+  margin-left: 0.5rem;
+  text-align: left;
+  border: none;
+  border-radius: 0.4rem;
+}
+
+.radio-button {
+  margin-top: 0.5rem;
+  /* all: unset;
+    display: inline-block;
+    height: 1rem;
+    width: 1rem;
+    border: 0.3rem solid var(--border-color); */
+}
+
+.radio-button,
+.remove-done-todos,
+#input-todo,
+#add-button {
+  border: 0.3rem solid transparent;
+}
+
+.radio-button:focus,
+.remove-done-todos:focus,
+#input-todo:focus,
+#add-button:focus {
+  border: 0.3rem solid var(--focus-color);
+}
+
+/* JS styling */
+/* still need to add and fix styling */
+
+#todo-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.checked {
+  text-decoration: line-through;
+  color: #555;
+}
+
+.checkbox {
+  all: unset;
+  margin-right: 0.7rem;
+  margin-bottom: 1rem;
+  display: inline-block;
+  border: 0.15rem solid var(--border-color);
+  border-radius: 0.1rem;
+  width: 1rem;
+  height: 1rem;
+}
+
+.checkbox:checked {
+  background-color: var(--checkbox-color);
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' aria-hidden='true' focusable='false' %3E%3Cpath fill='none' stroke='white' stroke-width='3' d='M1.73 12.91l6.37 6.37L22.79 4.59' /%3E%3C/svg%3E");
+}
+
+.list-element {
+  background-color: var(--box-highlight-color);
+  border-radius: 0.4rem;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+
+.list-element:focus {
+  box-shadow: 0.2rem 0.2rem var(--header-color);
+  border: 0.3rem solid var(--focus-color);
+}
+
+ul > * {
+  border: 0.3rem solid transparent;
+}
+
+/* style checkboxes created by js */
+input[type="checkbox"] {
+}
